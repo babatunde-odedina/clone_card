@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 225, 250);
+}
+
+.container {
+  position: relative;
+  top: 12rem;
+  background-color: white;
+  width: 40%;
+  height: 20%;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.upper-part img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 2rem;
+  top: 1.5rem;
+  border-radius: 50%;
+}
+.upper-part button {
+  position: relative;
+  top: 1.8rem;
+  right: 3rem;
+  width: 130px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  display: block;
+}
+.upper-part button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid balck;
+  transition: all 2s ease-out;
+}
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  margin: 2rem;
+}
+.description h3,
+h5 {
+  font-size: 14px;
+}
+#mail {
+  color: gray;
+}
+p {
+  margin: 2rem;
+  font-size: 14px;
+}
+p span {
+  color: gray;
+}
+#dot,
+#dot2 {
+  color: gray;
+  width: 10px;
+  position: relative;
+  top: 0.6rem;
+}
+
+@media (max-width: 660px){
+                    body{
+                                        position: relative;
+                                        top: 6rem;
+                    }
+                    .upper-part button{
+                                      position: relative;  
+                                      left: -1rem;
+                    }
+}
+@media (max-width: 450px) {
+               .upper-part button{
+                    position: relative;  
+                    left: -1rem;
+                    width: 80px;
+               }  
+               .container{
+                    margin: 5px;
+               }   
+}
